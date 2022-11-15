@@ -34,7 +34,7 @@
                 <constraints nullable="true"
                              foreignKeyName="fk_hotel_location"
                              references="location(id)"
-                             deleteCascade="true"/>
+                             deleteCascade="false"/>
             </column>
 
             <column name="phone"
@@ -49,7 +49,7 @@
                 <constraints nullable="true"
                              foreignKeyName="fk_hotel_manager"
                              references="manager(id)"
-                             deleteCascade="true"/>
+                             deleteCascade="false"/>
             </column>
 
             <column name="info"
