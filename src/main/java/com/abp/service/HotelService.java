@@ -16,5 +16,9 @@ public interface HotelService {
 
     void deleteById(int id);
 
-    Hotel getByName(String name);
+    List<Hotel> getByName(String name);
+
+    List<Hotel> getByLocationId(int locationId);
+
+    List<Hotel> getByManagerId(int managerId);
 }

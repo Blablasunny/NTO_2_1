@@ -19,6 +19,9 @@ public class Hotel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(name = "name")
+    private String name;
+
     @ManyToOne(targetEntity = Location.class, fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
     @JoinColumn(name = "location_id")
     private Location location;
